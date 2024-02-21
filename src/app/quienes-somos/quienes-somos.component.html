@@ -1,0 +1,21 @@
+<p>quienes-somos works!</p>
+
+
+<div class="btn-group d-flex flex-column w-25 d-inline-block">
+    <button type="button" class="btn btn-primary mx-2" (click)="get()">GET</button>
+    <br>
+    <input type="text" placeholder="introduce id" [(ngModel)]="inputIdGet">
+    <input type="button" class="btn btn-secondary mx-2" value="GET" (click)="get3()"/>
+    <br>
+    <button type="button" class="btn btn-primary mx-2 " (click)="post()">POST</button>
+    <br>
+    <button type="button" class="btn btn-primary mx-2" (click)="put()">PUT</button>
+    <br>
+    <button type="button" class="btn btn-primary mx-2" (click)="patch()">PATCH</button>
+    <br> 
+    <button type="button" class="btn btn-primary mx-2" (click)="delete()">DELETE</button>
+</div>
+
+<pre>
+    {{this.resultadoPeticion|json}}
+</pre>

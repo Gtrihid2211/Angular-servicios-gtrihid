@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <form action="" class="">
+        <div class="mb-3">
+            <label for="input_name">Nombre: </label>
+            <input type="text" name="input_name" placeholder="Nombre del proyecto" [(ngModel)]="input_name">
+        </div>
+        <div class="mb-3">
+            <label for="input_presupuesto">Presupuesto </label>
+            <input type="text" name="input_presupuesto" placeholder="Presupuesto" [(ngModel)]="input_presupuesto">
+        </div>
+        
+        <button (click)="agregarProyecto()" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+
+{{input_name}}
+{{input_presupuesto}}

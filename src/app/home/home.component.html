@@ -1,0 +1,8 @@
+{{this.proyecto.getNombre()}}
+{{this.proyecto.getPresupuesto()}}
+
+<ul>
+    <li *ngFor="let servicio of this.arrayProyectos;let i=index">
+        {{i+1}}-{{servicio.getNombre()}} - {{servicio.getPresupuesto()}}
+    </li>
+</ul>
